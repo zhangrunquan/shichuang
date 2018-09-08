@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"> 
+	<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">  
+	<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link href="css/style.css" type="text/css" rel="stylesheet"/>
+	<style>
+	 body{margin:0px;padding:0px;border:0px;}
+	 h1{margin:0px;padding:0px;border:0px;text-align:center;line-height: 100px;}
+	 #top{background-color:#C0C0C0;margin:0px;height:100px;}
+     #login{width:600px;margin:0 auto;padding:40px 0px;}
+     #login_logo{text-align:center; margin-top:20px;}
+     #login_font{font-size:30px;text-align:center;}
+     .login_input1{ display:block; width:350px; height:30px; padding:20px 20px;margin-left:auto;margin-right:auto; background-color:white; text-align:left; 
+     	 border-top-left-radius:10px; border-top-right-radius:10px; border:1px solid #fff; outline:none;  margin:0px auto; color:#999;}
+     .login_input1{border-top:2px solid #30a5ff;
+                   border-left:2px solid #30a5ff;
+                   border-right:2px solid #30a5ff;
+                   border-bottom:1.5px solid #30a5ff;}
+     .login_input2{ display:block; width:350px; height:30px; padding:20px 20px;margin-left:auto;margin-right:auto; background-color:white; text-align:left; 
+     	 border-bottom-left-radius:10px; border-bottom-right-radius:10px; border:2px solid #fff; outline:none;  margin:0px auto; color:#999;}
+     .login_input2{border-top:1px solid #30a5ff;
+                   border-left:2px solid #30a5ff;
+                   border-right:2px solid #30a5ff;
+                   border-bottom:2px solid #30a5ff;}
+    </style>
+    <script>
+function goBack()
+  {
+  window.history.back()
+  }
+</script>
+</head>
+<body>
+  <?php
+   session_start();
+  ?>
+	<div id="top"><h1>形成性评价系统</h1></div>
+	<a href="grade.php"><button type="button" style="position:absolute;left:650px;top:120px;width:150px;">查看成绩</button></a>
+	<table width="100%" border="1" cellspacing="1" cellpadding="4" bgcolor="#cccccc" class="tabtop13" align="center">
+
+  <tr>
+    <td width="15%" colspan="1" class="btbg font-center titfont" rowspan="1">一级指标</td>
+    <td width="15%" class="btbg font-center titfont" rowspan="1">二级指标</td>
+    <td width="15%" class="btbg font-center titfont" rowspan="1">三级指标</td>
+  </tr>
+  <tr>
+    <td class="btbg font-center titfont" rowspan="4" colspan="1">出勤及课堂表现</td>
+    <td class="btbg font-center titfont" rowspan="1" colspan="1">考勤</td>
+    <td class="btbg font-center titfont" rowspan="1" colspan="1">考勤次数</td>
+  <tr>
+  <tr>
+  	<td class="btbg font-center titfont" rowspan="2" colspan="1">课堂表现</td>
+    <td class="btbg font-center titfont" rowspan="1" colspan="1">课堂参与度</td>
+  </tr>
+  <tr>
+  	<td class="btbg font-center titfont" rowspan="1" colspan="1">课堂贡献度</td>
+  </tr>
+  <tr>
+  	<td class="btbg font-center titfont" rowspan="9" colspan="1">个人作业</td>
+  </tr>
+  <tr>
+  	<td class="btbg font-center titfont" rowspan="4" colspan="1">前侧</td>
+  	<td class="btbg font-center titfont" rowspan="1" colspan="1">主题选择</td>
+  </tr>
+  <tr>
+  	<td class="btbg font-center titfont" rowspan="1" colspan="1">内容分析</td>
+  </tr>
+  <tr>
+  	<td class="btbg font-center titfont" rowspan="1" colspan="1">具体论证</td>
+  </tr>
+  <tr>
+  	<td class="btbg font-center titfont" rowspan="1" colspan="1">报告规范</td>
+  </tr>
+  <tr>
+  	<td class="btbg font-center titfont" rowspan="4" colspan="1">后侧</td>
+  	<td class="btbg font-center titfont" rowspan="1" colspan="1">主题选择</td>
+  </tr>
+    </table>
+	<div class="btn-group">
+	<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" style="position:absolute;left:550px;width:150px;top:250px">小组作业 
+		<span class="caret"></span>
+	</button>
+	<ul class="dropdown-menu" role="menu" style="position:absolute;left:550px;top:282px;width:150px;">
+		<li style="width:150px;"><a href="个人自评.html">个人自评</a></li>
+		<li style="width:150px;"><a href="小组互评.html">小组互评</a></li>
+	</ul>
+    </div>
+	<button type="button" style="position:absolute;left:650px;width:150px;top:700px">完成</button>
+	<button type="button" onclick="goBack()" style="position:absolute;left:820px;width:150px;top:700px">返回上一级</button>
+  <?php
+    require_once 'mysqllink.php';
+    // 检测连接
+    if ($link->connect_error) {
+     die("连接失败: " . $link->connect_error);
+    } 
+    mysqli_query($link,"SET NAMES 'utf8'");
+    $txt=$_SESSION['username'];
+    echo '现在登录的账户名是'.$txt.'<br/>';
+    $link->close();
+  ?>
+</body>
+</html>
+	
+
+
+
