@@ -55,8 +55,27 @@ var x=c.rows[i].deleteCell(len2);//删除每一行末尾的单元格
 <script>
 function showHint(str)
 {
-  
-  window.location.href='insert.php?q='+str;
+  var table=[
+      'chuqin','geren','xiaozu'
+  ];
+  for (var i=0;i<3;++i){
+      console.log('showhint'+i);
+      //window.location.href='insert.php?q='+str[i]+'&table='+table[i];
+      $.ajax({
+          url: "insert.php",
+          data: {q:str[i],table:table[i]},
+          success: function (data) {
+              console.log(data)
+          }
+      })
+  }
+    $.ajax({
+        url: "insert_standard.php",
+        data: {q:str[3],table:'standard'},
+        success: function (data) {
+            console.log(data)
+        }
+    })
 }
 </script>
 <meta charset="UTF-8">
@@ -88,17 +107,52 @@ function showHint(str)
 
 
 <script type="text/javascript">
+    //var row_num=[3,8,15];
+    var row_num=[1,2,1];
+    var COLNUM=7;
 function setForm(){
 		var str="";
 			var num = $(".tdClass").find("input").length;
+        var total=row_num[0]*COLNUM;
+        str=[];
+        for(var j=0;j<4;++j){
+            str[j]='';
+        }
+        var i=0;
 		$(".tdClass").find("input").each(function(e){
 			var a = $(".tdClass").find("input").eq(e).val();
+            /*
 			if(e+1 == num){
 				str+= a;
 			}else{
 				str+= a+',';
-			}
+			}*/
+            console.log(e)
+			if(e+1>total){
+                console.log('total:'+total)
+                str[i]+= a+',';
+                total+=row_num[i]*COLNUM;
+			    ++i;
+            }else{
+                str[i]+= a+',';
+            }
+
+
+			    /*
+			    total+=row_num[i];
+			    while(e+1<=total){
+                    a = $(".tdClass").find("input").eq(e).val();
+			        console.log(e);
+                    if(e+1 == total){
+                        str[i]+= a;
+                    }else{
+                        str[i]+= a+',';
+                    }
+                }
+                str[3]+=str[i];*/
 		});
+		str[3]=str[0]+str[1]+str[2];
+		console.log(str);
 		return str;
 	}
 </script>

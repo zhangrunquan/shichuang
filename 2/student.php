@@ -38,9 +38,10 @@ function goBack()
    session_start();
   ?>
 	<div id="top"><h1>形成性评价系统</h1></div>
-	<a href="grade.php"><button type="button" style="position:absolute;left:650px;top:120px;width:150px;">查看成绩</button></a>
+	<a id="查看成绩" ><button type="button" style="position:absolute;left:650px;top:120px;width:150px;">查看成绩</button></a>
 	<table width="100%" border="1" cellspacing="1" cellpadding="4" bgcolor="#cccccc" class="tabtop13" align="center">
 
+<!--
   <tr>
     <td width="15%" colspan="1" class="btbg font-center titfont" rowspan="1">一级指标</td>
     <td width="15%" class="btbg font-center titfont" rowspan="1">二级指标</td>
@@ -77,12 +78,48 @@ function goBack()
   <tr>
   	<td class="btbg font-center titfont" rowspan="4" colspan="1">后侧</td>
   	<td class="btbg font-center titfont" rowspan="1" colspan="1">主题选择</td>
-  </tr>
+  </tr>-->
+        <?php
+        require_once 'mysqllink.php';
+        // 检测连接
+        if ($link->connect_error) {
+            die("连接失败: " . $link->connect_error);
+        }
+        mysqli_query($link, "SET NAMES 'utf8'");
+        $sql = "SELECT content,id FROM standard order by id desc limit 1";
+        $result = $link->query($sql);
+        if ($result->num_rows > 0) {
+            // 输出数据
+            while ($row = $result->fetch_assoc()) {
+                $str = $row["content"];
+            }
+        } else {
+            echo "0 结果";
+            exit();
+        }
+        $arr1 = explode(',', $str);
+
+        $length = count($arr1);
+        for ($x = 0; $x < $length; $x++) {
+            if($x%7==0){
+                echo '<a>'.$arr1[$x].'</a>'.' ';
+                continue;
+            }
+            if ($arr1[$x] == '') {
+                echo "&nbsp" . " ";
+            } else {
+                echo $arr1[$x] . " ";
+            }
+            if ($x % 7 == 6) {
+                echo "<br>";
+            }
+        }
+        ?>
     </table>
 	<div class="btn-group">
-	<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" style="position:absolute;left:550px;width:150px;top:250px">小组作业 
+	<!--<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" style="position:absolute;left:550px;width:150px;top:250px">小组作业
 		<span class="caret"></span>
-	</button>
+	</button>-->
 	<ul class="dropdown-menu" role="menu" style="position:absolute;left:550px;top:282px;width:150px;">
 		<li style="width:150px;"><a href="个人自评.html">个人自评</a></li>
 		<li style="width:150px;"><a href="小组互评.html">小组互评</a></li>
@@ -101,6 +138,9 @@ function goBack()
     echo '现在登录的账户名是'.$txt.'<br/>';
     $link->close();
   ?>
+  <button style="display: none" id="互评"><a id="link">小组互评</a></button>
+  <script src="jquery-3.3.1.min.js"></script>
+<script src="student.js"></script>
 </body>
 </html>
 	
