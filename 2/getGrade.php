@@ -1,7 +1,14 @@
 <?php
-$sid = $_GET['sid'];
-session_id($sid);
-session_start();
+if(isset($_GET['sid'])){
+    $sid = $_GET['sid'];
+    session_id($sid);
+    session_start();
+    $txt = $_SESSION['username'];
+}else{
+    $txt=$_GET['username'];
+}
+
+
 require_once 'mysqllink.php';
 // 检测连接
 if ($link->connect_error) {
@@ -9,7 +16,7 @@ if ($link->connect_error) {
 }
 mysqli_query($link, "SET NAMES 'utf8'");
 
-$txt = $_SESSION['username'];
+
 $sql = "SELECT * FROM totalgrade where name='$txt'";
 $result = mysqli_query($link,$sql);
 if(!$result){

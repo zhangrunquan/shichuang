@@ -31,7 +31,10 @@ function goBack()
   {
   window.history.back()
   }
+
 </script>
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="student.js"></script>
 </head>
 <body>
   <?php
@@ -39,9 +42,10 @@ function goBack()
   ?>
 	<div id="top"><h1>形成性评价系统</h1></div>
 	<a id="查看成绩" ><button type="button" style="position:absolute;left:650px;top:120px;width:150px;">查看成绩</button></a>
+  <button style="display: none" id="互评"><a id="link">小组互评</a></button>
 	<table width="100%" border="1" cellspacing="1" cellpadding="4" bgcolor="#cccccc" class="tabtop13" align="center">
 
-<!--
+
   <tr>
     <td width="15%" colspan="1" class="btbg font-center titfont" rowspan="1">一级指标</td>
     <td width="15%" class="btbg font-center titfont" rowspan="1">二级指标</td>
@@ -78,7 +82,7 @@ function goBack()
   <tr>
   	<td class="btbg font-center titfont" rowspan="4" colspan="1">后侧</td>
   	<td class="btbg font-center titfont" rowspan="1" colspan="1">主题选择</td>
-  </tr>-->
+  </tr>
         <?php
         require_once 'mysqllink.php';
         // 检测连接
@@ -138,9 +142,8 @@ function goBack()
     echo '现在登录的账户名是'.$txt.'<br/>';
     $link->close();
   ?>
-  <button style="display: none" id="互评"><a id="link">小组互评</a></button>
-  <script src="jquery-3.3.1.min.js"></script>
-<script src="student.js"></script>
+
+
 </body>
 </html>
 	

@@ -37,7 +37,7 @@ function goBack()
 <body>
 	<div id="top"><h1>形成性评价系统</h1></div>
 	
-	<button type="button" style="position:absolute;left:650px;width:150px;top:700px">完成</button>
+	<button type="button" style="position:absolute;left:650px;width:150px;top:700px"  onclick="showHint(setForm(),TABLE,STUNAME)">完成</button>
 	<button type="button" onclick="goBack()" style="position:absolute;left:820px;width:150px;top:700px">返回上一级</button>
   <table border="1">
 <tr>
@@ -56,172 +56,180 @@ function goBack()
   <td rowspan="3">确定主题</td>
   <td>课程相关度</td>
   <td>所选案例或学习网站适合课程学习并符合作业要求</td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
 </tr>
 <tr>
   <td>研究价值</td>
   <td>所选案例或学习网站具有一定的研究价值，可以引发课堂思考和讨论</td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
 </tr>
 <tr>
   <td>选择类型</td>
   <td>所选案例或学习网站具有一定的研究价值，可以引发课堂思考和讨论</td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
 </tr>
 <tr>
   <td rowspan="5">系统分析与设计</td>
   <td>完备性 </td>
   <td>系统为用户提供的功能完备</td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
 </tr>
 <tr>
   <td>合理性</td>
   <td>系统为用户提供的功能无冗余</td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
 </tr>
 <tr>
   <td>框架</td>
   <td>系统操作方式简单易学</td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
 </tr>
 <tr>
   <td>内容</td>
   <td>系统操作方式简单易学</td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
 </tr>
 <tr>
   <td>逻辑</td>
   <td>逻辑畅通</td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
 </tr>
 <tr>
   <td rowspan="4">界面制作</td>
   <td>文字配色</td>
   <td>用户界面（包含logo）文字配色符合审美体验</td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
 </tr>
 <tr>
   <td>页面</td>
   <td>用户界面布局合适，不过于拥挤或松散</td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
 </tr>
 <tr>
   <td>风格特点</td>
   <td>用户界面整体风格一致</td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
 </tr>
 <tr>
   <td>版面主题</td>
   <td>用户界面与设计主题相关度高</td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
 </tr>
 <tr>
   <td rowspan="3">撰写用户手册</td>
   <td>合理性</td>
   <td>系统为用户提供的功能无冗余</td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
 </tr>
 <tr>
   <td>及时反馈</td>
   <td>系统设计功能包含及时获得用户反馈</td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
 </tr>
 <tr>
   <td>提供帮助</td>
   <td>用户手册可为用户解决80%及以上的操作问题</td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
 </tr>
 </table>
+    <ul id="student_select"></ul>
+    <script>
+        //参数
+        var TABLE='xiaozu';
+        var info_stu = ['stu1', 'stu2', 'stu3', 'stu4'];
+        var STUNAME = 'stu1';
+    </script>
+    <script src="form.js"></script>
 </body>
 </html>
 	

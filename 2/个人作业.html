@@ -37,7 +37,7 @@ function goBack()
 <body>
 	<div id="top"><h1>形成性评价系统</h1></div>
 	
-	<button type="button" style="position:absolute;left:650px;width:150px;top:700px">完成</button>
+	<button type="button" style="position:absolute;left:650px;width:150px;top:700px"  onclick="showHint(setForm(),TABLE,STUNAME)">完成</button>
 	<button type="button" onclick="goBack()" style="position:absolute;left:820px;width:150px;top:700px">返回上一级</button>
   <table border="1">
 <tr>
@@ -57,127 +57,135 @@ function goBack()
   <td rowspan="3">主题选择</td>
   <td>课程相关度</td>
   <td>所选案例或学习网站适合课程学习并符合作业要求</td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
 </tr>
 <tr>
   <td>研究价值</td>
   <td>所选案例或学习网站具有一定的研究价值，可以引发课堂思考和讨论</td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
 </tr>
 <tr>
   <td>选择类型</td>
   <td>所选案例或学习网站具有一定的研究价值，可以引发课堂思考和讨论</td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
 </tr>
 <tr>
   <td rowspan="3">内容分析</td>
   <td>框架</td>
   <td>所选案例或学习网站的框架合理</td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
 </tr>
 <tr>
   <td>内容</td>
   <td>对所选案例或学习网站的内容分析是充分且完整的并结合所学知识</td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
 </tr>
 <tr>
   <td>逻辑</td>
   <td>所选案例或学习网站分析过程具有严谨的逻辑</td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
 </tr>
 <tr>
   <td rowspan="3">报告规范</td>
   <td>格式</td>
   <td>汇报性文档的格式正确</td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
 </tr>
 <tr>
   <td>字体</td>
   <td>汇报性文档的字体使用规范，清晰明了</td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
 </tr>
 <tr>
   <td>用词</td>
   <td>汇报性文档的用词准确，易于理解</td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
 </tr>
 <tr>
   <td rowspan="3">具体论证</td>
   <td>参考文献</td>
   <td>汇报性文档参考文献合适丰富</td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
 </tr>
 <tr>
   <td>论证</td>
   <td>完成案例分析和网站分析的论证过程简洁有效</td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
 </tr>
 <tr>
   <td>结论</td>
   <td>对案例和学习网站的分析结论合理，有效认识其优点或存在的问题</td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
+  <td class="tdClass"><input style="width: 100%; height: 100%"></td>
 </tr>
 </table>
+    <ul id="student_select"></ul>
+    <script>
+        //参数
+        var TABLE='geren';
+        var info_stu = ['stu1', 'stu2', 'stu3', 'stu4'];
+        var STUNAME = 'stu1';
+    </script>
+    <script src="form.js"></script>
 </body>
 </html>
 	

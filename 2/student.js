@@ -3,6 +3,7 @@ var sid = getQueryString("sid");
 var info_user=[];
 getSession();
 
+
 window.onload=function (ev) {
     var a=document.getElementById('查看成绩');
     a.href='grade.php?sid='+sid;

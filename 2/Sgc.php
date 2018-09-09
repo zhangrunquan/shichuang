@@ -96,20 +96,16 @@ function showHint(str)
 <table frame="border" rules="all" id="mytable">
 <tr >
 <td >一级指标</td>
-<td >比例</td>
 <td >二级指标</td>
-<td >比例</td>
 <td >三级指标</td>
-<td >比例</td>
-<td >观测点</td>
 </tr>
 </table>
 
 
 <script type="text/javascript">
-    //var row_num=[3,8,15];
-    var row_num=[1,2,1];
-    var COLNUM=7;
+    var row_num=[3,8,15];
+    //var row_num=[1,2,1];
+    var COLNUM=3;
 function setForm(){
 		var str="";
 			var num = $(".tdClass").find("input").length;

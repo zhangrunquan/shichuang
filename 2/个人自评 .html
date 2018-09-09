@@ -25,7 +25,7 @@
                    border-left:2px solid #30a5ff;
                    border-right:2px solid #30a5ff;
                    border-bottom:2px solid #30a5ff;}
-     td{width:180px;height:20px;padding:0px;}              
+      td{width:180px;height:30px;padding:0px;}
     </style>
     <script>
 function goBack()
@@ -36,10 +36,8 @@ function goBack()
 </head>
 <body>
 	<div id="top"><h1>形成性评价系统</h1></div>
-	<input readonly="value" value="被评价小组名称" style="margin-top:10px;margin-left:450px;width:150px;top:120px;text-align: center">
-	<input style="margin-left:50px;width:400px;top:120px;text-align: center">
-	<input readonly="value" value="评价小组名称" style="margin-top:10px;margin-bottom:10px;margin-left:450px;width:150px;top:150px;text-align: center">
-	<input style="margin-left:50px;width:400px;top:150px;text-align: center">
+	<input readonly="value" value="小组名称" style="margin-left:450px;margin-top:5px;margin-bottom:15px;width:150px;top:120px;text-align: center">
+	<input style="left:650px;width:400px;top:120px;text-align: center">
   <table border="1">
 <tr>
   <td>二级指标</td>
@@ -53,7 +51,7 @@ function goBack()
   <td>反馈意见</td>
 </tr>
 <tr>
-  <td rowspan="3">确定主题</td>
+  <td rowspan="3">主题选择</td>
   <td>课程相关度</td>
   <td>所选案例或学习网站适合课程学习并符合作业要求</td>
   <td><input style="width: 100%; height: 100%"></td>
@@ -85,7 +83,37 @@ function goBack()
 </tr>
 <tr>
   <td rowspan="5">系统分析与设计</td>
-  <td>完备性 </td>
+  <td>框架</td>
+  <td>系统操作方式简单易学</td>
+  <td><input style="width: 100%; height: 100%"></td>
+  <td><input style="width: 100%; height: 100%"></td>
+  <td><input style="width: 100%; height: 100%"></td>
+  <td><input style="width: 100%; height: 100%"></td>
+  <td><input style="width: 100%; height: 100%"></td>
+  <td><input style="width: 100%; height: 100%"></td>
+</tr>
+<tr>
+  <td>内容</td>
+  <td>系统内容丰富</td>
+  <td><input style="width: 100%; height: 100%"></td>
+  <td><input style="width: 100%; height: 100%"></td>
+  <td><input style="width: 100%; height: 100%"></td>
+  <td><input style="width: 100%; height: 100%"></td>
+  <td><input style="width: 100%; height: 100%"></td>
+  <td><input style="width: 100%; height: 100%"></td>
+</tr>
+<tr>
+  <td>逻辑</td>
+  <td>逻辑畅通</td>
+  <td><input style="width: 100%; height: 100%"></td>
+  <td><input style="width: 100%; height: 100%"></td>
+  <td><input style="width: 100%; height: 100%"></td>
+  <td><input style="width: 100%; height: 100%"></td>
+  <td><input style="width: 100%; height: 100%"></td>
+  <td><input style="width: 100%; height: 100%"></td>
+</tr>
+<tr>
+  <td>完备性</td>
   <td>系统为用户提供的功能完备</td>
   <td><input style="width: 100%; height: 100%"></td>
   <td><input style="width: 100%; height: 100%"></td>
@@ -105,36 +133,6 @@ function goBack()
   <td><input style="width: 100%; height: 100%"></td>
 </tr>
 <tr>
-  <td>框架</td>
-  <td>系统操作方式简单易学</td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-</tr>
-<tr>
-  <td>内容</td>
-  <td>系统操作方式简单易学</td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-</tr>
-<tr>
-  <td>逻辑</td>
-  <td>逻辑畅通</td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-</tr>
-<tr>
   <td rowspan="4">界面制作</td>
   <td>文字配色</td>
   <td>用户界面（包含logo）文字配色符合审美体验</td>
@@ -146,7 +144,7 @@ function goBack()
   <td><input style="width: 100%; height: 100%"></td>
 </tr>
 <tr>
-  <td>页面</td>
+  <td>页面布局</td>
   <td>用户界面布局合适，不过于拥挤或松散</td>
   <td><input style="width: 100%; height: 100%"></td>
   <td><input style="width: 100%; height: 100%"></td>
@@ -166,7 +164,7 @@ function goBack()
   <td><input style="width: 100%; height: 100%"></td>
 </tr>
 <tr>
-  <td>版面主题</td>
+  <td>版面与主题</td>
   <td>用户界面与设计主题相关度高</td>
   <td><input style="width: 100%; height: 100%"></td>
   <td><input style="width: 100%; height: 100%"></td>
@@ -187,16 +185,6 @@ function goBack()
   <td><input style="width: 100%; height: 100%"></td>
 </tr>
 <tr>
-  <td>及时反馈</td>
-  <td>系统设计功能包含及时获得用户反馈</td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-  <td><input style="width: 100%; height: 100%"></td>
-</tr>
-<tr>
   <td>提供帮助</td>
   <td>用户手册可为用户解决80%及以上的操作问题</td>
   <td><input style="width: 100%; height: 100%"></td>
@@ -206,9 +194,19 @@ function goBack()
   <td><input style="width: 100%; height: 100%"></td>
   <td><input style="width: 100%; height: 100%"></td>
 </tr>
+<tr>
+  <td>及时反馈</td>
+  <td>系统设计功能包含及时获得用户反馈</td>
+  <td><input style="width: 100%; height: 100%"></td>
+  <td><input style="width: 100%; height: 100%"></td>
+  <td><input style="width: 100%; height: 100%"></td>
+  <td><input style="width: 100%; height: 100%"></td>
+  <td><input style="width: 100%; height: 100%"></td>
+  <td><input style="width: 100%; height: 100%"></td>
+</tr>
 </table>
-<button type="button" style="margin-left:550px;margin-top:10px;width:150px;top:700px">完成</button>
-	<button type="button" onclick="goBack()" style="width:150px;top:700px">返回上一级</button>
+<button type="button" style="margin-left:650px;width:150px;margin-top:10px">完成</button>
+<button type="button" onclick="goBack()" style="width:150px;margin-top:10px">返回上一级</button>
 </body>
 </html>
 	

@@ -134,7 +134,7 @@
 </div>
 <div style="padding:100px;height:550px;width:500px;">
     <?php
-    $COLNUM=7;
+    $COLNUM=3;
     require_once 'mysqllink.php';
     // 检测连接
     if ($link->connect_error) {
@@ -154,23 +154,21 @@
     }
     $arr1 = explode(',', $str);
     $href_ar=['出勤及课堂表现.html','个人作业.html','小组作业.html'];
-    //var row_num=[3,8,15];
-    $row_num=[1,2,1];
+    $row_num=[3,8,15];
+    //$row_num=[1,2,1];
     $count_i=0;
     $index=0;
     $length = count($arr1);
     for ($x = 0; $x < $length; $x++) {
         if($x==0){
             echo '<a'.' href="'.$href_ar[$count_i].'"'.'>'.$arr1[$x].'</a>'.' ';
-            $count_i++;
-            $index+=$row_num[$count_i]*$COLNUM;
+            $index+=$row_num[$count_i++]*$COLNUM;
             continue;
         }
         if($x==$index){
             echo '<a'.' href="'.$href_ar[$count_i].'"'.'>'.$arr1[$x].'</a>'.' ';
-            $count_i++;
-            if($count_i<count($row_num)){
-                $index+=$row_num[$count_i]*$COLNUM;
+            if($count_i<count($row_num)-1){
+                $index+=$row_num[$count_i++]*$COLNUM;
             }
             continue;
         }
@@ -179,7 +177,7 @@
         } else {
             echo $arr1[$x] . " ";
         }
-        if ($x % 7 == 6) {
+        if ($x % $COLNUM == $COLNUM-1) {
             echo "<br>";
         }
     }
