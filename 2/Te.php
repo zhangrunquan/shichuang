@@ -121,7 +121,7 @@
     <button type="button" class="btn btn-default" style="left:250px"><a href="Sgc.php">课程及评价角度</a></button>
     <button type="button" class="btn btn-default" style="left:550px">评价内容</button>
     <div class="btn-group">
-        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" style="left:900px">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" style="left:900px" id="mulgrade">
             学生成绩查看
             <span class="caret"></span>
         </button>
@@ -132,6 +132,11 @@
         </ul>
     </div>
 </div>
+<script>
+    document.getElementById('mulgrade').onclick=function (ev) {
+        window.location="multigrade.php";
+    }
+</script>
 <div style="padding:100px;height:550px;width:500px;">
     <?php
     $COLNUM=3;

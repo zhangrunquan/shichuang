@@ -43,6 +43,7 @@ function showHint(str, table, username) {
             console.log(data)
         }
     })
+    saveTotal();
 }
 
 //从数据库中读取数据并填入表格
@@ -58,6 +59,30 @@ function fillForm(stuname) {
             $(".tdClass").find("input").each(function (e) {
                 $(".tdClass").find("input").eq(e).val(info[i++]) ;
             });
+        }
+    })
+}
+
+//计算总成绩
+function sum() {
+    var sum=0;
+    $(".tdClass").find("input").each(function (e) {
+        if($(".tdClass").find("input").eq(e).val()!=''){
+            sum += parseInt($(".tdClass").find("input").eq(e).val()) ;
+        }
+    });
+    return sum;
+}
+
+//向数据库保存总成绩
+function saveTotal() {
+    var total=sum();
+    console.log('total: '+total)
+    $.ajax({
+        url: "insert_totalgrade.php",
+        data: {key: COLUMN, value:total,username: STUNAME},
+        success: function (data) {
+            console.log(data)
         }
     })
 }

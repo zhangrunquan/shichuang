@@ -7,6 +7,8 @@ getSession();
 window.onload=function (ev) {
     var a=document.getElementById('查看成绩');
     a.href='grade.php?sid='+sid;
+    a=document.getElementById('xiaozuzuoye');
+    a.href='mid.html?sid='+sid;
 };
 
 
