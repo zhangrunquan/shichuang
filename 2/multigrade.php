@@ -239,15 +239,3 @@
 </script>
 </body>
 </html>
-
-
-
-
-
-<?php
-/**
- * Created by PhpStorm.
- * User: 20418
- * Date: 2018/9/9
- * Time: 15:11
- */

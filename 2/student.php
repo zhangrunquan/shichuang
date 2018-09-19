@@ -42,47 +42,10 @@ function goBack()
   ?>
 	<div id="top"><h1>形成性评价系统</h1></div>
 	<a id="查看成绩" ><button type="button" style="position:absolute;left:650px;top:120px;width:150px;">查看成绩</button></a>
-  <button style="display: none" id="互评"><a id="link">小组互评</a></button>
+  <!--<button style="display: none" id="互评"><a id="link">小组互评</a></button>-->
 	<table width="100%" border="1" cellspacing="1" cellpadding="4" bgcolor="#cccccc" class="tabtop13" align="center">
 
 
-  <tr>
-    <td width="15%" colspan="1" class="btbg font-center titfont" rowspan="1">一级指标</td>
-    <td width="15%" class="btbg font-center titfont" rowspan="1">二级指标</td>
-    <td width="15%" class="btbg font-center titfont" rowspan="1">三级指标</td>
-  </tr>
-  <tr>
-    <td class="btbg font-center titfont" rowspan="4" colspan="1">出勤及课堂表现</td>
-    <td class="btbg font-center titfont" rowspan="1" colspan="1">考勤</td>
-    <td class="btbg font-center titfont" rowspan="1" colspan="1">考勤次数</td>
-  <tr>
-  <tr>
-  	<td class="btbg font-center titfont" rowspan="2" colspan="1">课堂表现</td>
-    <td class="btbg font-center titfont" rowspan="1" colspan="1">课堂参与度</td>
-  </tr>
-  <tr>
-  	<td class="btbg font-center titfont" rowspan="1" colspan="1">课堂贡献度</td>
-  </tr>
-  <tr>
-  	<td class="btbg font-center titfont" rowspan="9" colspan="1">个人作业</td>
-  </tr>
-  <tr>
-  	<td class="btbg font-center titfont" rowspan="4" colspan="1">前侧</td>
-  	<td class="btbg font-center titfont" rowspan="1" colspan="1">主题选择</td>
-  </tr>
-  <tr>
-  	<td class="btbg font-center titfont" rowspan="1" colspan="1">内容分析</td>
-  </tr>
-  <tr>
-  	<td class="btbg font-center titfont" rowspan="1" colspan="1">具体论证</td>
-  </tr>
-  <tr>
-  	<td class="btbg font-center titfont" rowspan="1" colspan="1">报告规范</td>
-  </tr>
-  <tr>
-  	<td class="btbg font-center titfont" rowspan="4" colspan="1">后侧</td>
-  	<td class="btbg font-center titfont" rowspan="1" colspan="1">主题选择</td>
-  </tr>
         <?php
         $COLNUM=3;
         require_once 'mysqllink.php';

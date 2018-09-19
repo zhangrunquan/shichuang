@@ -125,6 +125,8 @@
             学生成绩查看
             <span class="caret"></span>
         </button>
+        <button type="button" id="ziping">学生自评</button>
+        <button type="button" id="huping">小组互评</button>
         <ul class="dropdown-menu" style="left:900px;position:absolute;">
             <li><a href="Sgc.html">总评结果</a></li>
             <li><a href="Sme.html">学生自评</a></li>
@@ -135,6 +137,12 @@
 <script>
     document.getElementById('mulgrade').onclick=function (ev) {
         window.location="multigrade.php";
+    }
+    document.getElementById('ziping').onclick=function (ev) {
+        window.location="xueshengziping.html";
+    }
+    document.getElementById('huping').onclick=function (ev) {
+        window.location="xueshenghuping.html";
     }
 </script>
 <div style="padding:100px;height:550px;width:500px;">
